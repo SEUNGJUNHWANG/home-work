@@ -1,0 +1,67 @@
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 600px;
+  height: 700px;
+}
+
+.top{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 502px;
+  height: 310px;
+}
+
+.top.left{
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.bottom-left{
+  border: 1px solid gray;
+  width: 243px;
+  height: 310px;
+  margin-top: -30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bottom-right{
+  border: 1px solid gray;
+  width: 243px;
+  height: 310px;
+  margin-left: 15px;
+  margin-top: -30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button-buy{
+  position: absolute;
+  top: 235px;
+  left: 20px;
+}
+
+.button-next-1{
+  position: absolute;
+  top: 260px;
+  left: 75px;
+}
+
+.button-next-2{
+  position: absolute;
+  top: 235px;
+  left: 20px;
+}
