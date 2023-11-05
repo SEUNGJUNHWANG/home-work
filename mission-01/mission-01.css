@@ -1,3 +1,7 @@
+* {
+  border: 1px solid green;
+}
+
 .container{
   display: flex;
   flex-flow: row wrap;
@@ -8,7 +12,7 @@
 
 .top{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   border: 1px solid gray;
@@ -17,10 +21,8 @@
 }
 
 .top.left{
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
-
+  flex-direction: column;
+  display: block;
 }
 
 .bottom-left{
