@@ -39,5 +39,37 @@ gap: 14px;
 }
 
 .main {
+  position: relative;
+}
 
+.main img { width: 100%; }
+
+.container {
+  width: 540px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.top_box {
+  text-align: center;
+}
+
+.input_box {
+  
+}
+
+.loginBox a {
+  width: 260px;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  line-height: 48px;
+}
+
+@media (max-width: 600px) {
+  .loginBox a {display: block;}
 }
