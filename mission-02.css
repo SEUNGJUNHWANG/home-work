@@ -1,0 +1,75 @@
+* {
+  /* border: 1px solid black; */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(375px, auto, 740px);
+  height: 22px;
+  flex-shrink: 0;
+  background-color: #FEFEFE;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.nav-bar {
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  display: flex;
+  color: var(--1, #24388D);
+font-family: SpoqaHanSans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+gap: 14px;
+}
+
+.main {
+  position: relative;
+}
+
+.main img { width: 100%; }
+
+.container {
+  width: 540px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.top_box {
+  text-align: center;
+}
+
+.input_box {
+  
+}
+
+.loginBox a {
+  width: 260px;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  line-height: 48px;
+}
+
+@media (max-width: 600px) {
+  .loginBox a {display: block;}
+}
