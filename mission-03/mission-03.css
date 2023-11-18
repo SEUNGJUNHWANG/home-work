@@ -1,8 +1,45 @@
-body{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, #000 100%), url(./images/background.png), lightgray 50% / cover no-repeat;
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  padding: 20px 25px;
+}
+
+@media (min-width: 768px) {
+  header{
+    height: 140px;
+    padding: 40px 200px;
+  }
+}
+
+.container {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, #000 100%), url(./images/background.png) no-repeat, lightgray 50% / cover no-repeat;
+  background-size: cover;
+  width: 100%;
   height: 100vh;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* language select & login 블록  */
+.language-login {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/* select box 스타일링 */
+
+/* select box 라벨의 내용 나오지 않게 class 적용 */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -15,17 +52,94 @@ body{
   border-width: 0;
 }
 
+/* select box 앞에 아이콘 넣어주기 */
+/* 글로벌 아이콘 백그라운드 이미지로 넣기 */
 .lang-select {
-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5.5px 34px;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #757575;
+  background-color: transparent;
+  background-image: url(/images/global.png);
+  /* 아래화살표 이미지 넣기 */
+  background-size: 16px 16px ;
+  background-repeat: no-repeat;
+  background-position: top 50% left 10px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .login {
-  display: inline-block;
+  display: block;
   background-color: #E50914;
   text-decoration: none;
   color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.006px;
+  text-align: center;
+  width: 60px;
+  height: 30px;
   border-radius: 4px;
-  padding: 6px 13px;
+  line-height: 30px;
+  margin-left: 16px;
 }
 
 
+.promotion {
+  /* background-color: blue; */
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: clamp(339px, 71%, 1200px);
+  height: 490px;
+  padding: 48px 0;
+  color: white;
+}
+
+.m1 {
+  font-size: 2.125em;
+}
+
+.m2 {
+  font-size: 1.125em;
+}
+
+.m3 {
+  font-size: 0.75em;
+}
+
+.email-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.email {
+  width: 245px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.promotion-free {
+  display: block;
+  background-color: #E50914;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  width: 160px;
+  height: 40px;
+}
+
+.m4 {
+  font-size: 12px;
+}
